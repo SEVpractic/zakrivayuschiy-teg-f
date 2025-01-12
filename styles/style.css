@@ -13,4 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family-base, sans-serif);
+  font-size: var(--card-text-size, 18px);
+  font-weight: var(--card-text-weight, 400);
 }
