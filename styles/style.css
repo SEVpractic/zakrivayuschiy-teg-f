@@ -15,5 +15,81 @@
   min-block-size: 100dvb;
   font-family: var(--font-family-base, sans-serif);
   font-size: var(--card-text-size, 18px);
-  font-weight: var(--card-text-weight, 400);
+  font-variation-settings: 'wght' var(--card-text-weight, 400), 'slnt' 0;
+  color: var(--themes-color-main, #000);
+}
+
+.header {
+  text-align: center;
+  border: 2px var(--themes-color-main, #000) solid;
+  margin-block-start: 100px;
+  margin-block-end: 117px; /* Временный отступ, убрать */
+}
+
+.header--responsive-width {
+  width: clamp(375px, 50vw, var(--section-max-width, 700px)); /* Резиновая ширина */
+  margin-inline: auto; /* Центрирование */
+  /* padding: clamp(120px, 50vh, 128px) 0; */
+  padding: 128px 0; /*ToDo заменить на формулу */
+}
+
+.header__logo {
+  font-family: var(--font-family-accent, monospace);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-family: var(--font-family-accent, monospace);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
+}
+
+.card {
+  border: 2px var(--themes-color-main, #000) solid;
+	background-color: var(--background-color);
+}
+
+.card--responsive-width {
+  width: clamp(375px, 50vw, var(--section-max-width, 700px)); /* Резиновая ширина */
+  margin-inline: auto; /* Центрирование */
+}
+
+.card__title {
+  padding: 5px 10px;
+  font-size: var(--card-text-size, 18px);
+  font-variation-settings: 'wght' var(--card-title-weight, 700);
+  letter-spacing: 0.1ex;
+	border-block-end: 2px var(--themes-color-main, #000) solid;
+}
+
+.card__cover {
+	position: relative;
+	border-bottom: 2px solid var(--content-color);
+}
+
+.cover__image {
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	inline-size: 100%;
+	aspect-ratio: 1/1;
+}
+
+.cover__label {
+  color: var(--themes-color-main, #000);
+  position: absolute;
+  inset-block-start: 25px;
+	inset-inline-end: 25px;
+  z-index: 100;
+  mix-blend-mode: hard-light;
+  text-transform: uppercase;
+}
+
+.card__text {
+  display: flex;
+  flex-flow: wrap column;
+  padding: 25px;
+  gap: 25px;
 }
