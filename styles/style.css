@@ -22,14 +22,13 @@
 .header {
   text-align: center;
   border: 2px var(--themes-color-main, #000) solid;
+  margin-inline: auto; /* Центрирование */
   margin-block: 100px;
+  padding-block: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
 }
 
 .header--responsive-width {
-  width: clamp(375px, 50vw, var(--section-max-width, 700px)); /* Резиновая ширина */
-  margin-inline: auto; /* Центрирование */
-  /* padding: clamp(120px, 50vh, 128px) 0; */
-  padding: 128px 0; /*ToDo заменить на формулу */
+  inline-size: clamp(375px, 50vw, var(--section-max-width, 700px)); /* Резиновая ширина */
 }
 
 .header__logo {
