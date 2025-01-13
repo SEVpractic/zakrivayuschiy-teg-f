@@ -45,14 +45,21 @@
   margin-block-start: 20px;
 }
 
+.main {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	row-gap: 50px;
+	margin-block-end: 50px;
+}
+
 .card {
   border: 2px var(--themes-color-main, #000) solid;
 	background-color: var(--background-color);
-  margin-inline: auto; /* Центрирование */
 }
 
 .card--responsive-width {
-  width: clamp(375px, 50vw, var(--section-max-width, 700px)); /* Резиновая ширина */  
+  inline-size: clamp(375px, 50vw, var(--section-max-width, 700px)); /* Резиновая ширина */  
 }
 
 .card__title {
@@ -102,11 +109,53 @@
 	}
 }
 
-.card__text {
+.card__content {
   display: flex;
   flex-flow: wrap column;
-  padding: 25px;
+  padding: 27px 25px 19px;
   gap: 25px;
+}
+
+.card__text {
+  line-height: 21px;
+}
+
+.card__paragraph:not(:last-of-type) {
+	margin-block-end: 27px;
+}
+
+.card__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  align-self: end;
+  gap: 6px;
+  /* justify-content: end;
+  margin: 0 25px 25px 0; */
+}
+
+.card__icon-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-block-start: 3px;
+}
+
+.like-icon {
+}
+
+.card__like-button {
+  margin-block-end: 5px;
+  border: 2px var(--themes-color-main, #000) solid;
+  background-color: transparent;
+  outline: none;
+  inline-size: 130px;  
+  block-size: 38px;
+  font-family: var(--font-family-accent, monospace);
+  font-size: 14px;
+}
+
+.button-text {
 }
 
 @media (width <= 375px) {
