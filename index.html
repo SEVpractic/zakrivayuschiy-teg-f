@@ -43,13 +43,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -79,13 +79,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -102,7 +102,7 @@
             alt="Автобус"
             loading="lazy">
             <figcaption class="cover__label">
-              &lt;/HTML&gt;
+              &lt;css&gt;
             </figcaption>
         </figure>
         <article class="card__content">
@@ -115,13 +115,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -138,7 +138,7 @@
             alt="Автобус"
             loading="lazy">
             <figcaption class="cover__label">
-              &lt;/HTML&gt;
+              &lt;desigions&gt;
             </figcaption>
         </figure>
         <article class="card__content">
@@ -151,13 +151,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -174,7 +174,7 @@
             alt="Автобус"
             loading="lazy">
             <figcaption class="cover__label">
-              &lt;/HTML&gt;
+              care
             </figcaption>
         </figure>
         <article class="card__content">
@@ -187,13 +187,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -210,7 +210,7 @@
             alt="Автобус"
             loading="lazy">
             <figcaption class="cover__label">
-              &lt;/HTML&gt;
+              &lt;support&gt;
             </figcaption>
         </figure>
         <article class="card__content">
@@ -223,13 +223,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -246,7 +246,7 @@
             alt="Автобус"
             loading="lazy">
             <figcaption class="cover__label">
-              &lt;/HTML&gt;
+              &lt;lifes-style: none;&gt;
             </figcaption>
         </figure>
         <article class="card__content">
@@ -259,13 +259,13 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -282,7 +282,7 @@
             alt="Автобус"
             loading="lazy">
             <figcaption class="cover__label">
-              &lt;/HTML&gt;
+              &lt;experience&gt;
             </figcaption>
         </figure>
         <article class="card__content">
@@ -295,19 +295,50 @@
             </p>
           </div>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <img 
                 class="like-icon"
                 src="./svg/heart animation white.svg" 
                 alt="Иконка сердечка">              
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
       </section>
     </main>
+    <footer class="footer">
+      <button 
+          type="button"
+          onclick="window['save-dialog'].showModal()"
+          aria-controls="save-dialog"
+          class="save-button button">
+        <svg class="save-button__icon">
+          <use href="./svg/floppy.svg#floppy-icon"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog
+          class="save-poup"
+          id="save-dialog"
+          class="">
+        <article class="save-poup__info">
+          <svg class="save-poup__icon">
+            <use href="./svg/floppy.svg#floppy-icon"></use>
+          </svg>
+          <p class="save-poup__text">Вставьте
+            дискету, чтобы продолжить</p>
+        </article>
+        <form>
+          <button
+            class="save-poup__button button"
+            type="submit">
+            <span>ok</span>
+          </button>
+        </form>
+    </dialog>
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
