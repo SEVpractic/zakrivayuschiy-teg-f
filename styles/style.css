@@ -81,6 +81,34 @@
 	aspect-ratio: 1/1;
 }
 
+.saturate {
+  filter: saturate(20%);
+}
+
+.sepia {
+  filter: sepia(80%);
+}
+
+.blur {
+  filter: blur(15px);
+}
+
+.hue-rotare {
+  filter: saturate(120%) hue-rotate(90deg) blur(3px);
+}
+
+.negative {
+  filter: invert(0.7);
+}
+
+.fading {
+  filter: saturate(30%);
+}
+
+.brigth {
+  filter: brightness(200%);
+}
+
 .cover__label {
   font-family: var(--font-family-accent, monospace);
   font-size: 14px;
