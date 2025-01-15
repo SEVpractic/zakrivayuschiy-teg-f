@@ -24,7 +24,8 @@
   border: 2px var(--themes-color-main, #000) solid;
   margin-inline: auto; /* Центрирование */
   margin-block: 100px;
-  padding-block: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
+  padding-block-start: clamp(7.5rem, 0.094vw + 7.478rem, 7.563rem);
+  padding-block-end: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
 }
 
 .header--responsive-width {
@@ -34,7 +35,6 @@
 .header__logo {
   font-family: var(--font-family-accent, monospace);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  line-height: 65px;
   text-transform: uppercase;
 }
 
@@ -42,7 +42,6 @@
   font-family: var(--font-family-accent, monospace);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
-  margin-block-start: 20px;
 }
 
 .main {
@@ -160,12 +159,12 @@
 }
 
 .footer {
-  margin-bottom: 150px;
+  margin-bottom: 103px; 
 }
 
 .save-button {
   display: flex;
-  flex-flow: nowrap;
+  flex-flow: nowrap row;
   align-items: center;
   gap: 8px;
   margin-inline: auto;
@@ -203,16 +202,45 @@
 .save-poup__text {
   font-family: var(--font-family-accent, monospace);
   font-size: var(--dialog-text-size, 14px);
+  line-height: 21px;
   text-transform: uppercase;
 }
 
 .save-poup__button {
   text-transform: uppercase;
+  inline-size: 100%;
+  padding-block: 12px;
 }
 
-@media (width <= 375px) {
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+  backdrop-filter: blur(7px);
+}
+
+@media (width < 376px) {
   .header--responsive-width,
   .card--responsive-width {
     inline-size: 100%;
+  }
+
+  .header__title {
+    margin-block-start: 19px;
+  }
+
+  .cover__label {
+    inset-block-start: 23px;
+    inset-inline-end: 11px;
+  }
+
+  .save-button {
+    flex-flow: wrap column;
+    gap: 8px;
+    margin-inline: auto;
+    padding: 15px 20px
+  }
+
+  .save-button__icon {
+    width: 28px;
+    height: 28px;
   }
 }
