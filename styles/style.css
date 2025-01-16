@@ -17,6 +17,10 @@
   font-size: var(--card-text-size, 18px);
   font-variation-settings: 'wght' var(--card-text-weight, 400), 'slnt' 0;
   color: var(--themes-color-main, #000);
+  background-color: var(--background-color, #fff);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -24,8 +28,9 @@
   border: 2px var(--themes-color-main, #000) solid;
   margin-inline: auto; /* Центрирование */
   margin-block: 100px;
-  padding-block-start: clamp(7.5rem, 0.094vw + 7.478rem, 7.563rem);
+  padding-block-start: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
   padding-block-end: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
+  background-color: var(--background-color, #fff);
 }
 
 .header--responsive-width {
@@ -33,15 +38,22 @@
 }
 
 .header__logo {
+  --font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+
   font-family: var(--font-family-accent, monospace);
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-size: var(--font-size);
+  line-height: var(--font-size);
   text-transform: uppercase;
 }
 
 .header__title {
+  --font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
   font-family: var(--font-family-accent, monospace);
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-size: var(--font-size);
+  line-height: var(--font-size);
   text-transform: uppercase;
+  margin-block-start: 20px;
 }
 
 .main {
@@ -54,7 +66,7 @@
 
 .card {
   border: 2px var(--themes-color-main, #000) solid;
-	background-color: var(--background-color);
+	background-color: var(--background-color, #fff);
 }
 
 .card--responsive-width {
@@ -175,6 +187,7 @@
   font-size: 14px;
   background-color: transparent;
   outline: none;
+  background-color: var(--background-color, #fff);
 }
 
 .card__like-button {
@@ -258,6 +271,10 @@ dialog::backdrop {
   .cover__label {
     inset-block-start: 23px;
     inset-inline-end: 11px;
+  }
+
+  .card__text {
+    word-spacing: 0.05em;
   }
 
   .save-button {
