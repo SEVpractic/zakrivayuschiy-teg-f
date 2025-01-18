@@ -178,13 +178,14 @@
   outline: none;
   border: none;
   cursor: pointer;
-  block-size: 100%;
-  transition: outline 0.3s ease;  
+  block-size: 100%;  
+  outline: 2px solid transparent;
+  outline-offset: -2px; /* Настраиваем смещение outline для визуального сходства с border */
+  transition: outline-color 0.3s ease;
 }
 
 .card__icon-button:focus-visible  {
-  outline: 2px solid var(--themes-color-main, #000);
-  outline-offset: -2px; /* Настраиваем смещение outline для визуального сходства с border */
+  outline-color: var(--themes-color-main, #000);
 }
 
 .like-icon {
