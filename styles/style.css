@@ -181,7 +181,6 @@
 
 .card__icon-button {
   border: none;
-  outline: none;
   outline: 2px solid transparent;
   outline-offset: -2px; /* Настраиваем смещение outline для визуального сходства с border */
   background-color: transparent;
@@ -291,7 +290,6 @@
   outline: none;
   overflow: hidden;
   background-color: transparent;
-  background-color: var(--background-color, #fff);
   transition: box-shadow 0.3s, color 0.3s;
   cursor: pointer;
 }
@@ -341,6 +339,7 @@
   gap: 8px;
   margin-inline: auto;
   padding: 15px 20px;
+  background-color: var(--background-color, #fff);
 }
 
 .save-button__icon {
