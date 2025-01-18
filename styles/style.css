@@ -170,7 +170,7 @@
   align-self: end;
   gap: 5px;
   block-size: 38px;
-  margin-block-end: 5px;
+  margin-block-end: 6px;
 }
 
 .card__icon-button {
@@ -179,13 +179,16 @@
   border: none;
   cursor: pointer;
   block-size: 100%;
+  transition: outline 0.3s ease;  
 }
 
 .card__icon-button:focus-visible  {
-  border: 2px var(--themes-color-main, #000) solid;
+  outline: 2px solid var(--themes-color-main, #000);
+  outline-offset: -2px; /* Настраиваем смещение outline для визуального сходства с border */
 }
 
 .like-icon {
+  padding-block-start: 2px;
 }
 
 .button {
