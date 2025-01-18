@@ -12,6 +12,9 @@
   --themes-color-main: #000; /*Основной цвет*/
 
   --background-color: #fff;
+
+  --icon-outline-color: #000;
+  --icon-accent-fill-color: #f00;
   
   --background-image:
     repeating-linear-gradient(
